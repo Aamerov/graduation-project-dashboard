@@ -8,7 +8,7 @@ import useResponsive from '../hooks/useResponsive';
 import Logo from '../components/logo';
 import Iconify from '../components/iconify';
 // sections
-import { LoginForm } from '../sections/auth/login';
+import { RegisterForm } from '../sections/auth/login';
 
 // ----------------------------------------------------------------------
 
@@ -33,20 +33,20 @@ const StyledContent = styled('div')(({ theme }) => ({
   margin: 'auto',
   minHeight: '100vh',
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: 'start',
   flexDirection: 'column',
-  padding: theme.spacing(12, 0),
+  padding: theme.spacing(10, 0),
 }));
 
 // ----------------------------------------------------------------------
 
-export default function LoginPage() {
+export default function RegisterPage() {
   const mdUp = useResponsive('up', 'md');
 
   return (
     <>
       <Helmet>
-        <title> Login | Minimal UI </title>
+        <title> تسجيل | علمني </title>
       </Helmet>
 
       <StyledRoot>
@@ -61,7 +61,7 @@ export default function LoginPage() {
         {mdUp && (
           <StyledSection>
             <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome Back
+              مرحباً , أهلاً مجدداً
             </Typography>
             <img src="/assets/illustrations/illustration_login.png" alt="login" />
           </StyledSection>
@@ -70,13 +70,13 @@ export default function LoginPage() {
         <Container maxWidth="sm">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
-              Sign in to Aliminy
+              سجل في منصة علمني
             </Typography>
 
-            <Typography variant="body2" sx={{ mb: 5 }}>
-              Don’t have an account? {''}
-              <Link variant="subtitle2" href="/register">
-                Get started
+            <Typography variant="body2" sx={{ mb: 2 }}>
+              لديك حساب بالفعل؟ {''}
+              <Link variant="subtitle2" href="/login">
+                تسجيل دخول
               </Link>
             </Typography>
 
@@ -100,7 +100,7 @@ export default function LoginPage() {
               </Typography>
             </Divider> */}
 
-            <LoginForm />
+            <RegisterForm />
           </StyledContent>
         </Container>
       </StyledRoot>

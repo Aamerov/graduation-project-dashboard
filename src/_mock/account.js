@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------
 
 const account = {
-  displayName: 'Zeyad Flafel',
-  email: 'zeyad.Flafel@creative.ful',
+  displayName: 'Zeyad Creative',
+  email: 'zeyad.creative@flafel.ful',
   photoURL: 'https://avatars.githubusercontent.com/u/106281614?v=4',
 };
 
