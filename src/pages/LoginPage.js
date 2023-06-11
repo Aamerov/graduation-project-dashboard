@@ -67,7 +67,7 @@ export default function LoginPage() {
           </StyledSection>
         )}
 
-        <Container maxWidth="sm">
+        <Container maxWidth="sm" dir="rtl">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
               Sign in to Aliminy

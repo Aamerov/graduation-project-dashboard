@@ -67,7 +67,7 @@ export default function RegisterPage() {
           </StyledSection>
         )}
 
-        <Container maxWidth="sm">
+        <Container maxWidth="sm" dir="rtl">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
               سجل في منصة علمني
